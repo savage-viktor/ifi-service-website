@@ -1,0 +1,44 @@
+%button {
+  @extend %site-animation;
+
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 78px;
+  border-style: none;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0em;
+  line-height: 1.214;
+  text-transform: uppercase;
+
+  width: 218px;
+  height: 48px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--color-hover);
+
+    // color: #79b6da;
+  }
+  @media screen and (min-width: 651px) {
+    width: 244px;
+    height: 53px;
+    font-size: 14px;
+  }
+}
+
+.hero__button {
+  @extend %button;
+  // padding: 16px 32px;
+  line-height: 1.28;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vendor-button,
+.contact-us__button {
+  @extend %button;
+}

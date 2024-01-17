@@ -1,0 +1,14 @@
+.adminPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.navPanel {
+  width: 20%;
+  border: 1px solid black;
+}
+
+.outlet {
+  width: 80%;
+  border: 1px solid black;
+}

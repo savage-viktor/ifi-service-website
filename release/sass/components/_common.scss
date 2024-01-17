@@ -1,0 +1,89 @@
+// flexbox properties
+// grid properties
+// positionning properties
+// visibility properties
+// cliping properties
+// box properties
+// animation properties
+// background properties
+// border properties
+// typography properties
+
+body {
+  background-color: var(--color-white);
+  font-size: 14px;
+  font-family: 'E-Ukraine', sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--color-primary-text1);
+  letter-spacing: 0em;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  font-size: inherit;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 var(--padding-container);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  max-width: 1120px;
+
+  position: relative;
+
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0em;
+  @media screen and (min-width: 821px) {
+    margin-bottom: 18px;
+    font-size: 26px;
+  }
+}
+
+.section-description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: var(--color-secondary-text);
+  text-align: center;
+  @media screen and (min-width: 821px) {
+    font-size: 16px;
+  }
+}

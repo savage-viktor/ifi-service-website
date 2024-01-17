@@ -1,0 +1,32 @@
+.overlay {
+  color: var(--color-primary-text2);
+
+  border-radius: 10px;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  font-size: 14px;
+  @media screen and (min-width: 651px) {
+    font-size: 16px;
+  }
+}
+
+.overlay.loading {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.overlay.success {
+  background-color: rgba(159, 255, 70, 0.801);
+}
+
+.overlay.error {
+  background-color: rgba(255, 70, 70, 0.801);
+}

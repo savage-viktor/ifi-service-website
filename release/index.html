@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFI Service - Сервісний центр</title>
+    <meta
+      name="description"
+      content="Ремонт, прошивка, розлочка GSM модемів та Wi-Fi роутерів ZTE, Huawei, Alcatel, Novatel, Netgear та інших"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CR282B8E4Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-CR282B8E4Z');
+    </script>
+    <script defer="defer" src="/static/js/homePage.js"></script>
+    <link href="/static/css/main.af1eb2e3.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="site-nav">
+        <a href="./index.html">
+          <img
+            height="93px"
+            src="./images/IFI_LOGO4x.png"
+            alt="Логотип компанії"
+          />
+        </a>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="page-header__menu-icon" width="46px" height="32px">
+            <use href="./images/icons_sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="./index.html"
+              >Головна</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./software_solutions.html"
+              >Програмні рішення</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./hardware_repair.html"
+              >Апаратний ремонт</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./shop.html">Магазин</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./contacts.html">Контакти</a>
+          </li>
+        </ul>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="page-header__menu-icon" width="46px" height="32px">
+              <use href="./images/icons_sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            IFI Service - сервісний центр GSM роутерів та модемів
+          </h1>
+          <h2 class="hero__slogan">Довірте своє обладнання професіоналам</h2>
+          <a href="#contacts">
+            <button type="button" class="hero__button">
+              Зв’язатися з нами
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="section services">
+        <h2 class="section-title">Сервісні послуги</h2>
+        <ul class="service-list">
+          <li class="service-item" id="hardware">
+            <img
+              class="service-item__image"
+              src="./images/illustration_hadrware.jpg"
+              alt="Чоловік ремонтує техніку"
+            />
+            <div class="service-item__about">
+              <h3 class="service-item__name">Ремонт</h3>
+              <p class="service-item__description">
+                Апаратний електромеханічний ремонт пристроїв, заміна мікросхем,
+                відновлення ланцюгів живлення, прийому мережі, ремонт антенних
+                розємів, SIM приймачів, USB розємів, дисплеїв та іншого.
+              </p>
+            </div>
+          </li>
+          <li class="service-item" id="software">
+            <img
+              class="service-item__image"
+              src="./images/illustration_software.jpg"
+              alt="На екрані смартфону завантажується прошивка"
+            />
+            <div class="service-item__about">
+              <h3 class="service-item__name">Прошивка</h3>
+              <p class="service-item__description">
+                Відновлення програмного забезпечення пристроїв при збоях,
+                перепрошивка при нестабільній роботі, оновлення версії ПЗ,
+                встановлення модифікованих інтерфейсів.
+              </p>
+            </div>
+          </li>
+          <li class="service-item" id="unlock">
+            <img
+              class="service-item__image"
+              src="./images/illustration_unlock.jpg"
+              alt="Чоловік розблоковує сматрфон"
+            />
+            <div class="service-item__about">
+              <h3 class="service-item__name">Розблокування</h3>
+              <p class="service-item__description">
+                Розлочка простоїв, якщо вони привязані до роботи з одним
+                конкретним оператором мобільного звязку, відкриття додаткових
+                робочих частот (Band).
+              </p>
+            </div>
+          </li>
+          <li class="service-item" id="antenna">
+            <img
+              class="service-item__image"
+              src="./images/illustration_antenna.jpg"
+              alt="Три людини використовують інтернет"
+            />
+            <div class="service-item__about">
+              <h3 class="service-item__name">Перепайка під антену</h3>
+              <p class="service-item__description">
+                Конструктивна зміна пристрою для підключення до нього зовнішньої
+                антени для підсилення прийому сигналу мобільної мережі.
+              </p>
+            </div>
+          </li>
+          <li class="service-item" id="interface">
+            <h3 class="service-item__name">Український інтерфейс</h3>
+            <p class="service-item__description">
+              Встановлення та розробка веб інтерфейсів та інтерфейсів дисплея
+              українською мовою для тих пристроїв, які не розраховані на
+              український ринок
+            </p>
+
+            <div class="service-item__interfaces">
+              <h4 class="service-item__interfaces-header">
+                Інтерфейси українською мовою
+              </h4>
+              <ul class="service-item__interfaces-list">
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/novatel_2372.jpg"
+                      alt="Роутер Novatel 2372"
+                    />
+                    <p class="service-item__interfaces-model">Novatel 2372</p>
+                  </a>
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/novatel_6620.jpg"
+                      alt="Роутер Novatel 6620"
+                    />
+                    <p class="service-item__interfaces-model">Novatel 6620</p>
+                  </a>
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/novatel_7730.jpg"
+                      alt="Роутер Novatel 7730"
+                    />
+                    <p class="service-item__interfaces-model">Novatel 7730</p>
+                  </a>
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/novatel_8800.jpg"
+                      alt="Роутер Novatel 8800"
+                    />
+                    <p class="service-item__interfaces-model">
+                      Novatel 8800
+                    </p></a
+                  >
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/inseego_m2000.jpg"
+                      alt="Роутер Inseego M2000"
+                    />
+                    <p class="service-item__interfaces-model">
+                      Inseego M2000
+                    </p></a
+                  >
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/netgear_ac791s.jpg"
+                      alt="Роутер Netgear 791"
+                    />
+                    <p class="service-item__interfaces-model">Netgear 791</p></a
+                  >
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/netgear_ac797s.jpg"
+                      alt="Роутер Netgear 797"
+                    />
+                    <p class="service-item__interfaces-model">Netgear 797</p></a
+                  >
+                </li>
+                <li class="service-item__interfaces-item">
+                  <a class="service-item__interfaces-link" href="">
+                    <img
+                      class="service-item__interfaces-image"
+                      src="./images/models/netgear_ac815s.jpg"
+                      alt="Роутер Netgear 815"
+                    />
+                    <p class="service-item__interfaces-model">Netgear 815</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section vendors">
+        <h2 class="section-title">Виробники обладнання</h2>
+        <p class="section-description">
+          Оберіть виробника обладнання для перегляду інформації
+        </p>
+
+        <ul class="vendor-list">
+          <li class="vendor-item">
+            <a class="vendor-link" href="inseego(novatel).html">
+              <svg width="150px">
+                <use href="./images/icons_sprite.svg#inseego"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="vendor-item">
+            <a class="vendor-link" href="inseego(novatel).html">
+              <img
+                class="vendor-image novatel"
+                src="./images/vendors/novatel.jpg"
+                alt="Логотип компанії Navatel"
+              />
+            </a>
+          </li>
+          <li class="vendor-item">
+            <a class="vendor-link" href="alcatel.html">
+              <svg class="vendor-image" width="159px">
+                <use href="./images/icons_sprite.svg#alcatel"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="vendor-item">
+            <a class="vendor-link" href="huawei.html">
+              <img
+                class="vendor-image bigger"
+                src="./images/vendors/huawei.png"
+                alt="Логотип компанії Huawei"
+              />
+            </a>
+          </li>
+
+          <li class="vendor-item">
+            <a class="vendor-link" href="zte.html">
+              <svg class="vendor-image" width="83px">
+                <use href="./images/icons_sprite.svg#zte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="vendor-item">
+            <a class="vendor-link" href="netgear.html">
+              <img
+                class="vendor-image bigger"
+                src="./images/vendors/netgear.webp"
+                alt="Логотип компанії Netgear"
+              />
+            </a>
+          </li>
+        </ul>
+        <a href="another_vendors.html">
+          <button class="vendor-button" type="submit">Інший виробник</button>
+        </a>
+      </section>
+
+      <section class="section partners">
+        <h2 class="section-title">Партнери</h2>
+        <p class="section-description">
+          Активна співпраця з багатьма інтернет магазинами мобільного 3G/4G
+          обладнання
+        </p>
+        <ul class="partner-list">
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://3g-digger.com"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/3gdigger.png"
+                alt="Логотип компанії 3G Digger"
+              />
+            </a>
+          </li>
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://www.4g.kiev.ua"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/4gkiev.png"
+                alt="Логотип компанії 4G Kiev"
+              />
+            </a>
+          </li>
+
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://center5g.com.ua/"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/center5g.png"
+                alt="Логотип компанії Center 5G"
+              />
+            </a>
+          </li>
+
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://goodok.com.ua/"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/goodok.png"
+                alt="Логотип компанії Goodok"
+              />
+            </a>
+          </li>
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://itcentre.net.ua/"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/itcentre.png"
+                alt="Логотип компанії IT Centre"
+              />
+            </a>
+          </li>
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://www.mobirator.com.ua/"
+            >
+              <img
+                class="vendor-image"
+                src="./images/patrners/mobirator.png"
+                alt="Логотип компанії Mobirator"
+              />
+            </a>
+          </li>
+          <li class="partner-item">
+            <a
+              class="partner-link"
+              target="”_blank”"
+              href="https://mobitech.com.ua/"
+            >
+              <img
+                class="partner-image"
+                src="./images/patrners/mobitech.png"
+                alt="Логотип компанії Mobitech"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section about_us">
+        <h2 class="section-title">Про нас</h2>
+        <div class="about_us-container">
+          <img
+            class="about_us-image"
+            src="./images/dykun_viktor.jpg"
+            alt="Фото Віктора Дикуна"
+          />
+          <div class="about_us-card">
+            <h3 class="about_us-header">Віктор Дикун</h3>
+            <p class="about_us-description">
+              Привіт, мене звати Віктор. Я керівник сервісного центру. В
+              основному всю роботу по сервісу я виконую сам, але іноді до деяких
+              задач можу підключати інших інженерів в цій галузі. Я займаюсь
+              сервісом CDMA/GSM обладнання з 2009 року. До 2012 року працював
+              інженером в сервісному центрі в компанії мобільного звязку CDMA
+              Ukraine. Потім головним інженером в американській компанії ІТС,
+              яка постачала обладнання з США на український ринок. З початку
+              2016 року працюю як фізична особа підприємець. Маю величезний
+              досвід роботи з мобільними роутерами та модемами. Щороку через
+              мене проходить від 4 до 6 тисяч одиниць обладнання, тому я точно
+              знаю, що робити з Вашим девайсом.
+            </p>
+            <ul class="about_us-social">
+              <li class="about_us-social_item">
+                <a href="https://www.facebook.com/dykunviktor/" target="_blank">
+                  <svg width="35px" height="35px">
+                    <use href="./images/icons_sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="about_us-social_item">
+                <a
+                  href="https://www.instagram.com/viktordykun/"
+                  target="_blank"
+                >
+                  <svg width="35px" height="35px">
+                    <use href="./images/icons_sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section contacts">
+        <h2 class="section-title">Контакти</h2>
+        <div class="contacts-container">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a
+                class="contacts-item__link"
+                href="https://maps.app.goo.gl/T4SX7Bp6rJJaYVnx6"
+                target="_blank"
+              >
+                <svg class="contacts-item__icon" width="18px" height="24px">
+                  <use href="./images/icons_sprite.svg#icon-address"></use>
+                </svg>
+                <span>Ірпінь, вул. Зарифи Алієвої, 104</span>
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-item__link" href="mailto:ifi.remont@gmail.com">
+                <svg class="contacts-item__icon" width="21px" height="17px">
+                  <use href="./images/icons_sprite.svg#icon-email"></use>
+                </svg>
+                <span>ifi.remont@gmail.com</span>
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-item__link" href="tel:+380934162750">
+                <svg class="contacts-item__icon" width="21px" height="21px">
+                  <use href="./images/icons_sprite.svg#icon-phone"></use>
+                </svg>
+                <span>+38 (093) 416-27-50</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-us" id="contact_us"></div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <a href="index.html">
+        <img
+          height="93px"
+          src="./images/IFI_LOGO4x.png"
+          alt="Логотип компанії"
+        />
+      </a>
+
+      <ul class="footer-links__nav">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="index.html"> Головна </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="software_solutions.html">
+            Програмні рішення
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="hardware_repair.html">
+            Апарантий ремонт
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="shop.html"> Магазин </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="contacts.html"> Контакти </a>
+        </li>
+      </ul>
+      <ul class="footer-links__services">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="inseego(novatel).html"
+            >Inseego (Novatel)</a
+          >
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="netgear.html">Netgear</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="alcatel.html">Alcatel</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="zte.html">ZTE</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="huawei.html">Huawei</a>
+        </li>
+      </ul>
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a
+            class="contacts-item__link"
+            href="https://maps.app.goo.gl/T4SX7Bp6rJJaYVnx6"
+            target="_blank"
+          >
+            <svg class="contacts-item__icon" width="17px" height="19px">
+              <use href="./images/icons_sprite.svg#icon-address"></use>
+            </svg>
+            <span>Ірпінь, вул. Зарифи Алієвої, 104</span>
+          </a>
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-item__link" href="mailto:ifi.remont@gmail.com">
+            <svg class="contacts-item__icon" width="17px" height="13px">
+              <use href="./images/icons_sprite.svg#icon-email"></use>
+            </svg>
+            <span>ifi.remont@gmail.com</span>
+          </a>
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-item__link" href="tel:+380934162750">
+            <svg class="contacts-item__icon" width="18px" height="18px">
+              <use href="./images/icons_sprite.svg#icon-phone"></use>
+            </svg>
+            <span>+38 (093) 416-27-50</span>
+          </a>
+        </li>
+
+        <li class="contacts-item">
+          <ul class="contacts-item-social">
+            <li class="contacts-item-social_item">
+              <a href="https://www.facebook.com/ifiservice" target="_blank">
+                <svg width="35px" height="35px">
+                  <use href="./images/icons_sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-item-social_item">
+              <a href="https://www.instagram.com/ifiservice/" target="_blank">
+                <svg width="35px" height="35px">
+                  <use href="./images/icons_sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
