@@ -3,7 +3,7 @@ function ModelsList({ models }) {
     <ul class="vendor-model-list">
       {models.map(model => {
         return (
-          <li key={model.id} class="vendor-model-item">
+          <li key={model._id} class="vendor-model-item">
             <a
               class="vendor-model-link"
               href={model.model.split(' ').join('').toLowerCase() + '.html'}

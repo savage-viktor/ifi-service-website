@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import ModelsList from './ModelsList';
 import Loader from '../Loader/Loader';
 import Error from '../Error/Error';
+import { GetModels } from '../../services/ModelsAPI';
 
 function VendorModels({ vendorName }) {
   const [status, setStatus] = useState('idle');
@@ -10,21 +11,14 @@ function VendorModels({ vendorName }) {
 
   useEffect(() => {
     setStatus('loading');
-    fetch('https://6519e0a5340309952f0cc472.mockapi.io/api/ifiservice/Models', {
-      method: 'GET',
-      headers: { 'content-type': 'application/json' },
-    })
-      .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
-        setStatus('error');
-      })
-      .then(tasks => {
-        setModels(tasks);
+
+    GetModels()
+      .then(models => {
+        setModels(models);
         setStatus('idle');
       })
       .catch(error => {
+        console.log(error.message);
         setStatus('error');
       });
   }, []);

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Loader from '../Loader/Loader';
 import Error from '../Error/Error';
+import { GetModels } from '../../services/ModelsAPI';
 
 function ModelServices({ modelName }) {
   const [status, setStatus] = useState('idle');
@@ -8,10 +9,7 @@ function ModelServices({ modelName }) {
 
   useEffect(() => {
     setStatus('loading');
-    fetch('https://6519e0a5340309952f0cc472.mockapi.io/api/ifiservice/Models', {
-      method: 'GET',
-      headers: { 'content-type': 'application/json' },
-    })
+    GetModels()
       .then(res => {
         if (res.ok) {
           return res.json();
