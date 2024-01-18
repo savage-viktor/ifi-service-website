@@ -1620,6 +1620,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .models-gallery-item {
@@ -1676,6 +1677,19 @@ img {
   .models-gallery-model {
     font-size: 16px;
   }
+}
+
+#software_solutions-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .vendor.section {

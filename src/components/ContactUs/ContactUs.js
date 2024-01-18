@@ -11,20 +11,11 @@ function ContactUs() {
     setStatus('loading');
     const SubmitForm = { name, phone, email, message };
 
-    // fetch(
-    //   'https://6519e0a5340309952f0cc472.mockapi.io/api/ifiservice/ContactUs',
-    //   {
-    //     method: 'POST',
-    //     headers: { 'content-type': 'application/json' },
-    //     body: JSON.stringify(SubmitForm),
-    //   }
-    // )
     SubmitMessage(SubmitForm)
       .then(res => {
         if (res.ok) {
           return res.json();
         }
-        // handle error
 
         setStatus('error');
 
@@ -33,7 +24,6 @@ function ContactUs() {
         }, 3000);
       })
       .then(task => {
-        // do something with the new task
         setStatus('success');
 
         setTimeout(() => {

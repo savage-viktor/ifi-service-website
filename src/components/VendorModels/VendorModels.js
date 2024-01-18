@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
-
 import ModelsList from './ModelsList';
 import Loader from '../Loader/Loader';
 import Error from '../Error/Error';
 import { GetModels } from '../../services/ModelsAPI';
+import { useEffect, useState } from 'react';
 
 function VendorModels({ vendorName }) {
   const [status, setStatus] = useState('idle');
@@ -18,7 +17,6 @@ function VendorModels({ vendorName }) {
         setStatus('idle');
       })
       .catch(error => {
-        console.log(error.message);
         setStatus('error');
       });
   }, []);

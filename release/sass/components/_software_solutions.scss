@@ -278,6 +278,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .models-gallery-item {
@@ -331,4 +332,10 @@
   @media screen and (min-width: 651px) {
     font-size: 16px;
   }
+}
+
+#software_solutions-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

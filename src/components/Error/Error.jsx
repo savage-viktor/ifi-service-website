@@ -1,6 +1,6 @@
 function Error() {
   return (
-    <p class="section-description">
+    <p className="section-description">
       Помилка завантаження. Перезавантажте сторінку
     </p>
   );

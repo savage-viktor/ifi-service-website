@@ -8,6 +8,7 @@ function ModelsGallery({ models, activeService }) {
           if (service.label === activeService) {
             isPage = service.isPage;
           }
+          return 0;
         });
 
         return (

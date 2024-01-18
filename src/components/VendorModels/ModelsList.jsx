@@ -1,23 +1,23 @@
 function ModelsList({ models }) {
   return (
-    <ul class="vendor-model-list">
+    <ul className="vendor-model-list">
       {models.map(model => {
         return (
-          <li key={model._id} class="vendor-model-item">
+          <li key={model._id} className="vendor-model-item">
             <a
-              class="vendor-model-link"
+              className="vendor-model-link"
               href={model.model.split(' ').join('').toLowerCase() + '.html'}
             >
               <img
-                class="vendor-model-image"
+                className="vendor-model-image"
                 src={model.image}
                 alt={model.model}
               />
-              <p class="vendor-model-name">{model.model}</p>
+              <p className="vendor-model-name">{model.model}</p>
             </a>
-            <div class="vendor-model__container-table">
-              <button class="vendor-model-detailed">Детальніше</button>
-              <table class="vendor-model__table" rules="all">
+            <div className="vendor-model__container-table">
+              <button className="vendor-model-detailed">Детальніше</button>
+              <table className="vendor-model__table" rules="all">
                 <colgroup>
                   <col />
                 </colgroup>

@@ -9,15 +9,10 @@ function ModelServices({ modelName }) {
 
   useEffect(() => {
     setStatus('loading');
+
     GetModels()
-      .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
-        setStatus('error');
-      })
-      .then(tasks => {
-        tasks.map(model => {
+      .then(models => {
+        models.map(model => {
           if (model.model === modelName) {
             return setModel(model);
           }
@@ -36,7 +31,7 @@ function ModelServices({ modelName }) {
       {status === 'error' && <Error />}
       {model && (
         <>
-          <table class="model-table" rules="all">
+          <table className="model-table" rules="all">
             <colgroup>
               <col />
             </colgroup>
@@ -75,25 +70,28 @@ function ModelServices({ modelName }) {
               </tr>
             </tbody>
           </table>
-          <div class="model-image-container">
-            <img class="model-image" src={model.image} alt={model.model} />
+          <div className="model-image-container">
+            <img className="model-image" src={model.image} alt={model.model} />
           </div>
 
-          <div class="model-services-container">
-            <h2 class="model-services-title">Список послуг щодо цієї моделі</h2>
+          <div className="model-services-container">
+            <h2 id="model-services-list" className="model-services-title">
+              Список послуг щодо цієї моделі
+            </h2>
 
-            <ul class="filter-button-list">
+            <ul className="filter-button-list">
               {model.services.map(service => {
                 return (
-                  <li class="filter-button-item">
+                  <li key={service.label} className="filter-button-item">
                     <a
-                      class="filter-button"
+                      className="filter-button"
+                      id={service.label}
                       href={
                         service.isPage
                           ? `${model.model.split(' ').join('').toLowerCase()}_${
                               service.page
                             }.html`
-                          : false
+                          : '#model-services-list'
                       }
                     >
                       {service.label}
